@@ -1,0 +1,33 @@
+1) Tenemos que agregar las librerias BASES para la coneccion a la BBDD desde paquete nuget
+     - Instalamos el paquete Microsof.EntityFrameworkCore
+     - Microsoft.EntityFrameworkCore.InMemory( Este paquete nos va ayudar a crear una BBDD en memoria
+        y asi probar el modelo que nosotros estamos creando de nuestro proyecto usando clases y atributos)
+     - Microsoft.EntityFrameworkCore.SqlServer (Este componente nos permitira conectarnos con la BBDD)
+     - Microsoft.EntityFrameworkCore.Design(La necesitamos para hacer las migraciones)
+
+2) Creamos clas modelos con sus atributos para luego crear las BBDD
+
+3) Creamos la configuracion de entityFramework
+
+4) Por medio de DataAnnotations podemos darle cierto requisito a nuestros atributos que luego estos mismos
+     seran creados como columnas
+
+5) Utilizamos BBDD en memoria para saber si todos los atributos estan correctos y luego podemos crear la BBDD
+     en sql server
+
+
+Fluent API: Forma avanzada de configuración sin utilizar atributos o data-annotations,
+ usando funciones de extensión anidadas en objetos de tabla, columnas durante el mapeo de los datos.
+Utilizamos funciones. Simpre va predominar los atributos que estar aca
+
+Migraciones= sirve para hacer un seguimiento de todas las modificaciones que tenemos en nuestra base de datos
+Es un registro/bitácora donde se visualizan los cambios realizados a elemento(s) de la base de datos.
+
+Nos permite ver un verionamiento de las BBDD
+
+dotnet ef migrations add InitialCreate( comando para iniciar la migracion)
+
+
+
+
+
